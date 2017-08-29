@@ -9,14 +9,15 @@ http://bikeangels.citibikenyc.com/
 
 
 ## Scoring Function:
-## score (dh, df, w)
+### score (dh, df, w)
 
-## Function Input:
+### Function Input:
 dh - Date Hour to score such as '2017030821' - "2017030905"
 
 df - Data Frame of Prescores of past 3 hours before Date Hour (It usually requires Citi Bike Histories data from the past 3 days to make the Data Frame of Prescores of past 3 hours)
 
  w - Scoring Standard such as w = [0.05, 0.1, 0.1, 0.5, 0.1, 0.1, 0.05], which means after sorting the stations by their prescores from min to max, successively give %5 of stations the score of -3, %10 of stations the score of -2, 10% of stations the score of -1, 50% of stations the score of 0, 10% of stations the score of 1, 10% of stations the score of 2, 5% of stations the score of 3.
 
-## Function Output:
+### Function Output:
 Scoring Table - Scores of each station at the Date Hour 
+<img width="1058" alt="screen shot 2017-08-28 at 20 49 45" src="https://user-images.githubusercontent.com/22066435/29800220-c868a8ca-8c36-11e7-9423-5054d60e6178.png">
